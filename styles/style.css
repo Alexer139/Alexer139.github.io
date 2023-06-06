@@ -12,7 +12,7 @@ button {
     background-color: #141414;
     max-block-size: 50px;
     font-style: 'Open Sans', serif;
-    border: 2px solid rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
     cursor: pointer;
     padding: 32px 32px;
     padding-bottom:50px;
@@ -47,7 +47,9 @@ button:not(:lact-child) {
     border-right: none;
 }
 button:hover {
-    background-color: rgb(31, 30, 27)
+    background-color: #F6CC0C;
+    color:#141414;
+    transition: 0.2s;
 }
 
 
@@ -55,7 +57,6 @@ img {
     display: block;
     margin: 0 auto;
     width: 610px;
-    cursor: wait;
 }
 
 body {
