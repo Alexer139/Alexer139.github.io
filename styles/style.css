@@ -7,26 +7,62 @@ html {
 }
 
 button {
-
+    text-align: center;
     color: #F6CC0C;
-    background-color: rgb(255 255 255);
-    size: 60px;
-
-
-
+    background-color: #141414;
+    max-block-size: 50px;
+    font-style: 'Open Sans', serif;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 32px 32px;
+    padding-bottom:50px;
+    padding-top: 12px; 
+    margin: 4px 2px;
+    font-size: 35px;
 }
+button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+button span::after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+button:hover span {
+    padding-right: 25px;
+}
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+button {border-radius: 8px;}
+    
+button:not(:lact-child) {
+    border-right: none;
+}
+button:hover {
+    background-color: rgb(31, 30, 27)
+}
+
 
 img {
     display: block;
     margin: 0 auto;
     width: 610px;
+    cursor: wait;
 }
 
 body {
     
     width: 700px;
     margin: auto;
-    background-color: #141414
+    background-color: hsl(0, 0%, 8%)
 }
 
 h1 {
@@ -52,7 +88,7 @@ p {
     text-shadow: #141414;
 }
 
-
+p {border-radius: 8px;}
 
 
 
