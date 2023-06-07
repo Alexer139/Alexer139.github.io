@@ -6,11 +6,62 @@ html {
     text-align: center;
 }
 
-#myText {
-    text-align: center;
+img {
+    /* display: block; */
+    width: 740px;
+    left: 45%;
+
+    
+}
+
+body {
+    top: 50px;
+    /* width: 700px; */
+    background-color: hsl(0, 0%, 8%)
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    font-size: 70px;
+    margin: 0;
+    text-shadow: 0.5px 0.5px 0.5px #F6CC0C;
+    color: #F6CC0C
+}
+
+p {
+    text-align: justify;
+    margin: 6px;
+    line-height: 2.5;
+    letter-spacing: 0.5px;
+    text-shadow: 0.5px 0.5px 0.5px #F6CC0C;
+    color: #F6CC0C;
+    width: 700px;
+    border: 3px solid rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+p {border-radius: 8px;}
+
+.verticalcenter {
+    display: table-cell;
+    height: 400px;
+    vertical-align: middle;
+}
+                                        
+ .txt {                    
+    display: flex;
+    flex-direction: column;     
+    align-items: flex-start;
+    margin-top: 20px;                                /******************ТЕКСТА ТУТА**************/
+    text-align: left;
     color: #F6CC0C;
     background-color: #141414;
-    
     font-style: 'Open Sans', serif;
     border: 3px solid rgb(255, 255, 255);
     cursor: pointer;
@@ -22,9 +73,47 @@ html {
     display: none;
     position: absolute;
     right: 10px;
+    width: 650px;
 }
 
-#myText {border-radius: 8px;}
+.txt {border-radius: 8px;}
+
+.txt1 {
+    top: 566px;
+    height: 80px;
+
+}
+.txt2 {
+    top: 735px;
+
+}
+.txt3 {
+    top: 945px;
+
+}
+.txt4 {
+    top: 1153px;
+
+}
+.txt5 {
+    top: 1324px;
+
+}
+.txt6 {
+    top: 1534px;
+
+}
+.txt7 {
+    top: 1705px;
+
+}
+.txt8 {
+    top: 1953px;
+
+}
+
+
+
 
 .fade-in {
     animation: fade-in is ease-in;
@@ -36,11 +125,13 @@ html {
     to {
         opacity: 0;
     }
-}
+} 
+
+
 
 .button {margin-bottom: 10px;}
 
-.button {
+.button {                                                            /***************КНОПКИ ТУУУТАА****************/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -55,15 +146,19 @@ html {
     padding-top: 12px; 
     margin: 4px 2px;
     font-size: 35px;
+    width: 850px;
+    text-align: left;
 }
 
-.button1 {
+.button1 {                                                                      /****КНОПКА 1111111111111****/
     background-color: #141414;
     color: #F6CC0C;
     border: 3px solid white;
     padding: 50px 50px;
     padding-bottom: 10px;
     padding-top: 3px;
+     /* width: 770px; */
+     height: 100px; 
     
 }
 
@@ -99,12 +194,15 @@ html {
         transition: 0.3s;
     }
 
-.button2 {
+.button2 {                                                              /****КНОПКА 2222222222222222222****/
         background-color: #141414;
         color: #F6CC0C;
         border: 3px solid white;
         padding-bottom: 10px;
         padding-top: 3px;
+        margin: 3px 4px;
+        /* width: 770px; */
+        height: 135px;
     }
     
     .button2 span {
@@ -139,13 +237,15 @@ html {
             transition: 0.3s;
         }   
 
- .button3 {
+.button3 {                                                                      /****КНОПКА 33333333333333333****/
             background-color: #141414;
             color: #F6CC0C;
             border: 3px solid white;
             padding-bottom: 10px;
             padding-top: 3px;
-        }
+            /* width: 770px; */
+            height: 135px; 
+        }   
         
         .button3 span {
             cursor: pointer;
@@ -179,12 +279,14 @@ html {
                 transition: 0.3s;
             }   
 
-.button4 {
+.button4 {                                                                       /****КНОПКА 44444444444444444****/
                 background-color: #141414;
                 color: #F6CC0C;
                 border: 3px solid white;
                 padding-top: 3px;
                 padding-bottom: 10px;
+                /* width: 770px;
+                height: 100px; */
             }
             
             .button4 span {
@@ -219,12 +321,14 @@ html {
                     transition: 0.3s;
                 }   
 
-.button5 {
+.button5 {                                                                          /****КНОПКА 5555555555555555555****/
                     background-color: #141414;
                     color: #F6CC0C;
                     border: 3px solid white;
                     padding-top: 3px;
                     padding-bottom: 10px;
+                    /* width: 770px;
+                    height: 135px; */
                     
                 }
                 
@@ -259,12 +363,14 @@ html {
                         color:#141414;
                         transition: 0.3s;
                     }   
- .button6 {
+.button6 {                                                                      /****КНОПКА 6666666666666666666666****/
                         background-color: #141414;
                         color: #F6CC0C;
                         border: 3px solid white;
                         padding-top: 3px;
                         padding-bottom: 10px;
+                        /* width: 770px;
+                        height: 100px; */
                     }
                     
                     .button6 span {
@@ -299,12 +405,14 @@ html {
                             transition: 0.3s;
                         }   
 
-.button7 {
+.button7 {                                                                  /****КНОПКА 777777777777777777777****/
                             background-color: #141414;
                             color: #F6CC0C;
                             border: 3px solid white;
                             padding-top: 3px;
                             padding-bottom: 10px;
+                            /* width: 770px;
+                            height: 185px; */
                         }
                         
                         .button7 span {
@@ -339,12 +447,14 @@ html {
                                 transition: 0.3s;
                             }   
 
-.button8 {
+.button8 {                                                                      /****КНОПКА 888888888888888888888****/
                                 background-color: #141414;
                                 color: #F6CC0C;
                                 border: 3px solid white;
                                 padding-top: 3px;
                                 padding-bottom: 10px;   
+                                 /* width: 770px; */
+                                height: 135px;
                             }
                             
                             .button8 span {
@@ -379,94 +489,6 @@ html {
                                     transition: 0.3s;
                                 }   
 
-                            
 
 
 
-
-
-
-/* button span {
-cursor: pointer;
-display: inline-block;
-position: relative;
-transition: 0.5s;
-}
-button span::after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-button:hover span {
-    padding-right: 25px;
-}
-button:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-button {border-radius: 8px;}
-    
-button:not(:lact-child) {
-    border-right: none;
-}
-button:hover {
-    background-color: #F6CC0C;
-    color:#141414;
-    transition: 0.2s;
-} */
- 
-
-
-
-img {
-    display: block;
-    width: 610px;
-
-    
-}
-
-body {
-    top: 50px;
-    width: 700px;
-    background-color: hsl(0, 0%, 8%)
-}
-
-h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 15vh;
-    font-size: 40px;
-    margin: 0;
-    text-shadow: 0.5px 0.5px 0.5px #F6CC0C;
-    color: #F6CC0C
-}
-
-
-p {
-    text-align: justify;
-    margin: 6px;
-    line-height: 2.5;
-    letter-spacing: 0.5px;
-    text-shadow: 0.5px 0.5px 0.5px #F6CC0C;
-    color: #F6CC0C;
-    width: 700px;
-    border: 3px solid rgb(255, 255, 255);
-    padding-left: 10px;
-    padding-right: 10px;
-    
-}
-
-p {border-radius: 8px;}
-
-
-
-.verticalcenter {
-    display: table-cell;
-    height: 400px;
-    vertical-align: middle;
-}
