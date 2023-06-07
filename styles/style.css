@@ -6,11 +6,47 @@ html {
     text-align: center;
 }
 
-button {
+#myText {
     text-align: center;
     color: #F6CC0C;
     background-color: #141414;
-    max-block-size: 50px;
+    
+    font-style: 'Open Sans', serif;
+    border: 3px solid rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 15px 15px;
+    padding-bottom:10px;
+    padding-top: 6px; 
+    margin: 4px 2px;
+    font-size: 35px;
+    display: none;
+    position: absolute;
+    right: 10px;
+}
+
+#myText {border-radius: 8px;}
+
+.fade-in {
+    animation: fade-in is ease-in;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.button {margin-bottom: 10px;}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    color: #F6CC0C;
+    background-color: #141414;
     font-style: 'Open Sans', serif;
     border: 3px solid rgb(255, 255, 255);
     cursor: pointer;
@@ -20,7 +56,337 @@ button {
     margin: 4px 2px;
     font-size: 35px;
 }
-button span {
+
+.button1 {
+    background-color: #141414;
+    color: #F6CC0C;
+    border: 3px solid white;
+    padding: 50px 50px;
+    padding-bottom: 10px;
+    padding-top: 3px;
+    
+}
+
+.button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+    }
+    .button1 span::after {
+        content: '\00bb';
+        position:sticky;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.2s;
+    }
+    .button1:hover span {
+        padding-right: 25px;
+    }
+    .button1:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    .button1 {border-radius: 8px;}
+        
+    .button1:not(:lact-child) {
+        border-right: none;
+    }
+    .button1:hover {
+        background-color: #F6CC0C;
+        color:#141414;
+        transition: 0.3s;
+    }
+
+.button2 {
+        background-color: #141414;
+        color: #F6CC0C;
+        border: 3px solid white;
+        padding-bottom: 10px;
+        padding-top: 3px;
+    }
+    
+    .button2 span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.2s;
+        }
+        .button2 span::after {
+            content: '\00bb';
+            position: sticky;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.2s;
+        }
+        .button2:hover span {
+            padding-right: 25px;
+        }
+        .button2:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .button2 {border-radius: 8px;}
+            
+        .button2:not(:lact-child) {
+            border-right: none;
+        }
+        .button2:hover {
+            background-color: #F6CC0C;
+            color:#141414;
+            transition: 0.3s;
+        }   
+
+ .button3 {
+            background-color: #141414;
+            color: #F6CC0C;
+            border: 3px solid white;
+            padding-bottom: 10px;
+            padding-top: 3px;
+        }
+        
+        .button3 span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.2s;
+            }
+            .button3 span::after {
+                content: '\00bb';
+                position: sticky;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.2s;
+            }
+            .button3:hover span {
+                padding-right: 25px;
+            }
+            .button3:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+            .button3 {border-radius: 8px;}
+                
+            .button3:not(:lact-child) {
+                border-right: none;
+            }
+            .button3:hover {
+                background-color: #F6CC0C;
+                color:#141414;
+                transition: 0.3s;
+            }   
+
+.button4 {
+                background-color: #141414;
+                color: #F6CC0C;
+                border: 3px solid white;
+                padding-top: 3px;
+                padding-bottom: 10px;
+            }
+            
+            .button4 span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.2s;
+                }
+                .button4 span::after {
+                    content: '\00bb';
+                    position: sticky;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.2s;
+                }
+                .button4:hover span {
+                    padding-right: 25px;
+                }
+                .button4:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                }
+                .button4 {border-radius: 8px;}
+                    
+                .button4:not(:lact-child) {
+                    border-right: none;
+                }
+                .button4:hover {
+                    background-color: #F6CC0C;
+                    color:#141414;
+                    transition: 0.3s;
+                }   
+
+.button5 {
+                    background-color: #141414;
+                    color: #F6CC0C;
+                    border: 3px solid white;
+                    padding-top: 3px;
+                    padding-bottom: 10px;
+                    
+                }
+                
+                .button5 span {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                    transition: 0.2s;
+                    }
+                    .button5 span::after {
+                        content: '\00bb';
+                        position: sticky;
+                        opacity: 0;
+                        top: 0;
+                        right: -20px;
+                        transition: 0.2s;
+                    }
+                    .button2:hover span {
+                        padding-right: 25px;
+                    }
+                    .button5:hover span:after {
+                        opacity: 1;
+                        right: 0;
+                    }
+                    .button5 {border-radius: 8px;}
+                        
+                    .button5:not(:lact-child) {
+                        border-right: none;
+                    }
+                    .button5:hover {
+                        background-color: #F6CC0C;
+                        color:#141414;
+                        transition: 0.3s;
+                    }   
+ .button6 {
+                        background-color: #141414;
+                        color: #F6CC0C;
+                        border: 3px solid white;
+                        padding-top: 3px;
+                        padding-bottom: 10px;
+                    }
+                    
+                    .button6 span {
+                        cursor: pointer;
+                        display: inline-block;
+                        position: relative;
+                        transition: 0.2s;
+                        }
+                        .button6 span::after {
+                            content: '\00bb';
+                            position: sticky;
+                            opacity: 0;
+                            top: 0;
+                            right: -20px;
+                            transition: 0.2s;
+                        }
+                        .button6:hover span {
+                            padding-right: 25px;
+                        }
+                        .button6:hover span:after {
+                            opacity: 1;
+                            right: 0;
+                        }
+                        .button6 {border-radius: 8px;}
+                            
+                        .button6:not(:lact-child) {
+                            border-right: none;
+                        }
+                        .button6:hover {
+                            background-color: #F6CC0C;
+                            color:#141414;
+                            transition: 0.3s;
+                        }   
+
+.button7 {
+                            background-color: #141414;
+                            color: #F6CC0C;
+                            border: 3px solid white;
+                            padding-top: 3px;
+                            padding-bottom: 10px;
+                        }
+                        
+                        .button7 span {
+                            cursor: pointer;
+                            display: inline-block;
+                            position: relative;
+                            transition: 0.2s;
+                            }
+                            .button7 span::after {
+                                content: '\00bb';
+                                position: sticky;
+                                opacity: 0;
+                                top: 0;
+                                right: -20px;
+                                transition: 0.2s;
+                            }
+                            .button7:hover span {
+                                padding-right: 25px;
+                            }
+                            .button7:hover span:after {
+                                opacity: 1;
+                                right: 0;
+                            }
+                            .button7 {border-radius: 8px;}
+                                
+                            .button7:not(:lact-child) {
+                                border-right: none;
+                            }
+                            .button7:hover {
+                                background-color: #F6CC0C;
+                                color:#141414;
+                                transition: 0.3s;
+                            }   
+
+.button8 {
+                                background-color: #141414;
+                                color: #F6CC0C;
+                                border: 3px solid white;
+                                padding-top: 3px;
+                                padding-bottom: 10px;   
+                            }
+                            
+                            .button8 span {
+                                cursor: pointer;
+                                display: inline-block;
+                                position: relative;
+                                transition: 0.2s;
+                                }
+                                .button8 span::after {
+                                    content: '\00bb';
+                                    position: sticky;
+                                    opacity: 0;
+                                    top: 0;
+                                    right: -20px;
+                                    transition: 0.2s;
+                                }
+                                .button8:hover span {
+                                    padding-right: 25px;
+                                }
+                                .button8:hover span:after {
+                                    opacity: 1;
+                                    right: 0;
+                                }
+                                .button8 {border-radius: 8px;}
+                                    
+                                .button8:not(:lact-child) {
+                                    border-right: none;
+                                }
+                                .button8:hover {
+                                    background-color: #F6CC0C;
+                                    color:#141414;
+                                    transition: 0.3s;
+                                }   
+
+                            
+
+
+
+
+
+
+/* button span {
 cursor: pointer;
 display: inline-block;
 position: relative;
@@ -50,25 +416,31 @@ button:hover {
     background-color: #F6CC0C;
     color:#141414;
     transition: 0.2s;
-}
+} */
+ 
+
 
 
 img {
     display: block;
-    margin: 0 auto;
     width: 610px;
+
+    
 }
 
 body {
-    
+    top: 50px;
     width: 700px;
-    margin: auto;
     background-color: hsl(0, 0%, 8%)
 }
 
 h1 {
-    text-align: center;
-    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    font-size: 40px;
     margin: 0;
     text-shadow: 0.5px 0.5px 0.5px #F6CC0C;
     color: #F6CC0C
@@ -86,7 +458,7 @@ p {
     border: 3px solid rgb(255, 255, 255);
     padding-left: 10px;
     padding-right: 10px;
-    text-shadow: #141414;
+    
 }
 
 p {border-radius: 8px;}

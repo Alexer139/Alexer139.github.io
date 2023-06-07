@@ -15,6 +15,26 @@
 //     alert('Ты точно уверен?');
 // }
 
+const button = document.getElementById('myButton');
+const text = document.getElementById('myText');
+
+button.addEventListener('click', function() {
+  if (text.style.display === 'block') {
+    // Если текст уже видимый, скрываем его
+    text.style.display = 'none';
+  } else {
+    // Если текст скрыт, показываем его
+    text.style.display = 'block';
+  }
+  
+  // Добавляем анимацию
+  text.classList.add('fade-in');
+  setTimeout(function() {
+    text.classList.remove('fade-in');
+  }, 3000);
+});
+
+
 
 
 
@@ -32,28 +52,32 @@ myImage.onclick = function() {
 }
 
 
-var myButton = document.querySelector('button');
-var myHeading = document.querySelector('h1');
+// var myButton = document.querySelector('button');
+// var myHeading = document.querySelector('h1');
 
-function setUserName() {
 
-    var myName = prompt('а ну ка скажи твое имя');
-    localStorage.setItem('name', myName);
-    myHeading.textContent = 'Здесь будут показываться вопросы,  ' + myName;
+// function setUserName() {
 
-}
+//     var myName = prompt('а ну ка скажи твое имя');
+//     localStorage.setItem('name', myName);
+//     myHeading.textContent = 'Здесь будут показываться вопросы,  ' + myName;
 
-if(!localStorage.getItem('name')) {
+// }
 
-    setUserName();
+// if(!localStorage.getItem('name')) {
 
-} else {
+//     setUserName();
 
-    var storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Здесь будут показываться вопросы', + storedName;
-}
+// } else {
 
-myButton.onclick = function() {
-    setUserName();
-}
+//     var storedName = localStorage.getItem('name');
+//     myHeading.textContent = 'Здесь будут показываться вопросы', + storedName;
+// }
+
+// myButton.onclick = function() {
+//     setUserName();
+// }
+
+// var mybnt1 = document.querySelector('mybnt1');
+
 
