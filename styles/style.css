@@ -10,8 +10,7 @@ img {
     /* display: block; */
     width: 740px;
     left: 45%;
-
-    
+    user-select: none;
 }
 
 body {
@@ -56,7 +55,7 @@ p {border-radius: 8px;}
                                         
  .txt {                    
     display: flex;
-    flex-direction: column;     
+    flex-flow: column wrap;    
     align-items: flex-start;
     margin-top: 20px;                                /******************ТЕКСТА ТУТА**************/
     text-align: left;
@@ -78,13 +77,13 @@ p {border-radius: 8px;}
 
 .txt {border-radius: 8px;}
 
-.txt1 {
+/* .txt1 {
     top: 566px;
     height: 80px;
 
 }
 .txt2 {
-    top: 735px;
+    top: 743px;
 
 }
 .txt3 {
@@ -110,7 +109,7 @@ p {border-radius: 8px;}
 .txt8 {
     top: 1953px;
 
-}
+} */
 
 
 
@@ -148,6 +147,7 @@ p {border-radius: 8px;}
     font-size: 35px;
     width: 850px;
     text-align: left;
+    user-select: none;
 }
 
 .button1 {                                                                      /****КНОПКА 1111111111111****/
