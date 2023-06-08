@@ -169,5 +169,3 @@ button8.addEventListener("click", function() {
 // }
 
 // var mybnt1 = document.querySelector('mybnt1');
-
-
