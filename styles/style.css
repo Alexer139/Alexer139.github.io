@@ -74,15 +74,50 @@ p {border-radius: 8px;}
     height: 400px;
     vertical-align: middle;
 }
-                                        
+
+.send {
+    background-color: #141414;
+    color: white;
+    font-style: 'Open Sans', serif;
+    padding: 15px 15px;
+    cursor: pointer;
+    border: 3px ridge white;
+    display: inline-block;
+    font-size: 24px;
+    text-decoration: none;
+    outline: none;
+    box-shadow: 0 9px #999;
+}
+.send {border-radius: 8%}
+.send:hover {color: #F6CC0C; background-color: #000000;}
+.send:active {
+    color:#F6CC0C;
+    background-color: #000000;
+    box-shadow: 0 5px #666;
+    transform: translateY(10px);
+}
+
+
+.quastions {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.txt_blocks {
+    width: 100%;
+
+}
+
  .txt {               
     resize: none;
     overflow:auto;
     word-wrap: break-word;
     vertical-align: middle;
     float: right;
-    margin-left: auto;
-    text-align: right;     
+    margin-left: auto;    
     flex-direction: column;                                    
     text-align: left;
     color: #F6CC0C;
@@ -91,7 +126,7 @@ p {border-radius: 8px;}
     border: 3px solid rgb(255, 255, 255);
     cursor: pointer;
     padding: 15px 15px;
-    padding: auto;
+    padding: 15px 15px;
     padding-bottom:10px;
     padding-top: 6px; 
     margin-top: 20px;
@@ -101,11 +136,12 @@ p {border-radius: 8px;}
     right: 5%;
     width: 650px;
 
+
 }
 
 .txt {border-radius: 8px;}
 
-.txt1 {
+/* .txt1 {
     margin-bottom: 103px;
     height: 100px;
     resize: none;
@@ -143,7 +179,7 @@ p {border-radius: 8px;}
 .txt8 {
     
     margin-bottom: 103px;
-}
+} */
 
 
 
@@ -163,6 +199,7 @@ p {border-radius: 8px;}
 
 
 .button {margin-bottom: 10px;}
+
 
 .button {                                                            /***************КНОПКИ ТУУУТАА****************/
     display: flex;
