@@ -6,55 +6,114 @@
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/aadd9baacb.js" crossorigin="anonymous"></script>
     
 
   </head>
   <body>
-    
-    <h1>Интерактивный опрос по JS</h1> 
+      <div id="uuuoop">
+        <h1 id="uuoop" class="h1" style="text-align: center;" >Интерактивный опрос по JS</h1>  
+      </div>
+
+  
 
 
-    <input type="text"  style="display: none;" name="Ответ1">
-    
+
+    <div class="immg">
     <img src="images/blog5.png" alt="кто это видит или слышит тот лох хихихихих">
+  </div>
 
-    <a href="answer_page.html" class="anw_pg">Ответы других пользователей</a>
+    <div class="answ_pg">
+    <a href="answer_page.html" id="anw_pg">Ответы других пользователей</a>
+  </div>
+
+    <div class="message" id="message">Ваше собщение отправлено!</div> 
+
+    <form id="message-form" action="save_message.php" method="post">
+      <input type="submit"  onclick="sendMessage()" class="send" value="Отправить">
 
 
-    <div class="quastions">
-        <div class="btnеs"><button id="btn1" class="button button1" style="vertical-align: middle;"><span>Какой уровень опыта вы имеете в программировании?</span></button></div>   
-          <div class="txt_blocks"><textarea type="text" id="txt1" class="txt txt1" rows="4" cols="50" style="display: none;" name="Answer1" placeholder="Какой уровень опыта вы имеете в программировании? " required></textarea></div>
+
+
+      
+    <div
+     class="quastions">
+        <div
+         class="btnes baton">
+          <button
+           id="btn1"
+            class="button button1"
+             style="vertical-align: middle; display: flex; flex-direction: row;">
+            <span>Какой уровень опыта вы имеете в программировании?</span>
+          </button>
+        </div>   
+          <div
+           class="txt_blocks">
+           <textarea
+            type="text"
+            id="txt1"
+             class="txt txt1"
+              rows="4"
+               cols="50"
+                style="display: none;"
+                 name="Answer1"
+                  placeholder="Какой уровень опыта вы имеете в программировании? "
+                   required>
+                  </textarea>
+                </div>
+          </div>
+    <div
+     class="quastions">
+        <div
+         class="btnеs"
+          style="width: 50%;">
+          <button
+           id="btn2"
+            class="button button2"
+             style="vertical-align: middle;">
+            <span>Какой тип проекта или задачи вам было бы интересно выполнить с использованием JavaScript?</span>
+          </button>
+        </div>   
+          <div
+           class="txt_blocks">
+            <textarea
+             type="text"
+              id="txt2"
+             class="txt txt2"
+              rows="4"
+               cols="50"
+                style="display: none;"
+                 name="Answer1"
+                  placeholder="Какой тип проекта или задачи вам было бы интересно выполнить с использованием JavaScript? "
+                   required>
+                </textarea>
+              </div>
           </div>
     <div class="quastions">
-        <div class="btnеs"><button id="btn2" class="button button2" style="vertical-align: middle;"><span>Какой тип проекта или задачи вам было бы интересно выполнить с использованием JavaScript?</span></button></div>   
-          <div class="txt_blocks"><textarea type="text" id="txt2" class="txt txt2" rows="4" cols="50" style="display: none;" name="Answer1" placeholder="Какой тип проекта или задачи вам было бы интересно выполнить с использованием JavaScript? " required></textarea></div>
-          </div>
-    <div class="quastions">
-      <div class="btnеs"><button id="btn3" class="button button3" style="vertical-align: middle;"><span>Какие типы ресурсов (книги, онлайн-курсы, видеоуроки и т.д.) вы предпочитаете использовать для обучения JavaScript? </span></button></div>   
+      <div class="btnеs" style="width: 50%;" ><button id="btn3" class="button button3" style="vertical-align: middle;"><span>Какие типы ресурсов (книги, онлайн-курсы, видеоуроки и т.д.) вы предпочитаете использовать для обучения JavaScript? </span></button></div>   
         <div class="txt_blocks"><textarea type="text" id="txt3" class="txt txt3" rows="4" cols="50" style="display: none;" name="Answer1" placeholder="Какие типы ресурсов (книги, онлайн-курсы, видеоуроки и т.д.) вы предпочитаете использовать для обучения JavaScript?" required></textarea></div>
         </div>
     <div class="quastions">
-      <div class="btnеs"><button id="btn4" class="button button4" style="vertical-align: middle;"><span>Какие именно темы в языке JS вас больше всего интересуют? </span></button></div>   
+      <div class="btnеs" style="width: 50%;"><button id="btn4" class="button button4" style="vertical-align: middle;"><span>Какие именно темы в языке JS вас больше всего интересуют? </span></button></div>   
         <div class="txt_blocks"><textarea type="text" id="txt4" class="txt txt4" rows="4" cols="50" style="display: none;" name="Answer1" placeholder="Какие именно темы в языке JS вас больше всего интересуют?" required></textarea></div>
         </div>
     <div class="quastions">
-      <div class="btnеs"><button id="btn5" class="button button5" style="vertical-align: middle;"><span>Какие конкретные навыки в разработке веб-приложений с использованием JavaScript вы хотели бы развить?</span></button></div>   
+      <div class="btnеs" style="width: 50%;"><button id="btn5" class="button button5" style="vertical-align: middle;"><span>Какие конкретные навыки в разработке веб-приложений с использованием JavaScript вы хотели бы развить?</span></button></div>   
         <div class="txt_blocks"><textarea type="text" id="txt5" class="txt txt5" rows="4" cols="50" style="display: none;" name="Answer1" placeholder="Какие конкретные навыки в разработке веб-приложений с использованием JavaScript вы хотели бы развить?" required></textarea></div>
         </div>
     <div class="quastions">
-      <div class="btnеs"><button id="btn6" class="button button6" style="vertical-align: middle;"><span>Какая длительность и обучения вам были бы наиболее удобны?</span></button></div>   
+      <div class="btnеs" style="width: 50%;"><button id="btn6" class="button button6" style="vertical-align: middle;"><span>Какая длительность и обучения вам были бы наиболее удобны?</span></button></div>   
         <div class="txt_blocks"><textarea type="text" id="txt6" class="txt txt6" rows="4" cols="50" style="display: none;" name="Answer1" placeholder="Какая длительность и обучения вам были бы наиболее удобны?" required></textarea></div>
         </div>
     <div class="quastions">
-      <div class="btnеs"><button id="btn7" class="button button7" style="vertical-align: middle;"><span>Как вы считаете, какие основные преимущества и недостатки языка JavaScript существуют по сравнению с другими языками программирования?</span></button></div>   
+      <div class="btnеs" style="width: 50%;"><button id="btn7" class="button button7" style="vertical-align: middle;"><span>Как вы считаете, какие основные преимущества и недостатки языка JavaScript существуют по сравнению с другими языками программирования?</span></button></div>   
         <div class="txt_blocks"><textarea type="text" id="txt7" class="txt txt7" rows="4" cols="50" style="display: none;" name="Answer1" placeholder="Как вы считаете, какие основные преимущества и недостатки языка JavaScript существуют по сравнению с другими языками программирования?" required></textarea></div>
         </div>
     <div class="quastions">
-      <div class="btnеs"><button id="btn8" class="button button8" style="vertical-align: middle;"><span>Какие сложности или проблемы вы обнаружили при изучении JavaScript, и как вы их преодолеваете?</span></button></div>   
+      <div class="btnеs" style="width: 50%;"><button id="btn8" class="button button8" style="vertical-align: middle;"><span>Какие сложности или проблемы вы обнаружили при изучении JavaScript, и как вы их преодолеваете?</span></button></div>   
         <div class="txt_blocks"><textarea type="text" id="txt8" class="txt txt8" rows="4" cols="50" style="display: none;" name="Answer1" placeholder="Какие сложности или проблемы вы обнаружили при изучении JavaScript, и как вы их преодолеваете?" required></textarea></div>
         </div>
-
+      </form>
       
         
         <!-- <button id="btn2" class="button button2" style="vertical-align: middle;"><span>Какой тип проекта или задачи вам было бы интересно выполнить с использованием JavaScript? </span></button> <br> <br>
@@ -65,9 +124,9 @@
         <button id="btn7" class="button button7" style="vertical-align: middle;"><span>Как вы считаете, какие основные преимущества и недостатки языка JavaScript существуют по сравнению с другими языками программирования? </span></button> <br> <br>
         <button id="btn8" class="button button8" style="vertical-align: middle;"><span>Какие сложности или проблемы вы обнаружили при изучении JavaScript, и как вы их преодолеваете? </span></button> <br> <br>
       <div class="txt_blocks">
-        <form id="message-form" action="save_message.php" method="post">
+        
         <br>
-        <input type="submit" class="send" value="Отправить">
+        
         
         <textarea type="text" id="txt2" class="txt txt2" style="display: none;" name="Answer2" placeholder="Какой тип проекта или задачи вам было бы интересно выполнить с использованием JavaScript?" required></textarea><br><br>
         <textarea type="text" id="txt3" class="txt txt3" style="display: none;" name="Answer3" placeholder="Какие типы ресурсов (книги, онлайн-курсы, видеоуроки и т.д.) вы предпочитаете использовать для обучения JavaScript?" required></textarea><br><br>

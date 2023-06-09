@@ -19,10 +19,40 @@
 //   xhr.send('message' + encodeURIComponent(message));
 // });
 
+function sendMessage() {
+  
+  var messageElement = document.getElementById('message');
+  messageElement.classList.add('sent');
+
+  setTimeout(function() {
+    messageElement.classList.remove('sent')
+  }, 3000);
+
+
+  // var send = document = document.getElementsByClassName('send');
+  
+  // var message = send[0].value;
+
+  // send[0].disabled = true;
+}
+
+
 
 
 var button1 = document.getElementById("btn1");        //1111111111
 var text1 = document.getElementById("txt1");
+var send = document.getElementById("send");
+
+text1.addEventListener("keyup", function(event) {
+  if (event.key === 'Enter') {
+    send.click();
+  }
+});
+
+text1.addEventListener("click", function() {
+  var message = text1.value;
+  text1.value = "";
+});
 
 button1.addEventListener("click", function() {
   if (text1.style.display === "none") {

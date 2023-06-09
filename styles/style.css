@@ -6,14 +6,65 @@ html {
     text-align: center;
 }
 
+#uuoop {            
+                                          /********************АНИМАЦИЯ ЗАГАЛОВКА********************/
+    left: 50%;
+    position: relative;
+    /* display: flex; */
+    /* flex-direction:unset; */
+
+    animation-duration: 600px;
+    width: 1100px;
+    background-color: #F6CC0C;
+    color:#141414;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 12s infinite;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#uuuoop {
+    margin-top: 5%;
+}
+
+#uuoop::before {
+    
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 0;
+    height: 100%;
+    background-color:#F6CC0C;
+    animation: myanimation 2s forwards;
+}
+
+
+    @-webkit-keyframes mymove {
+        50% {width: 100%;}
+    }
+    @keyframes mymove {
+        50% {width: 100%;}
+    }
+
+.h1 {
+    font-style: 'Open Sans', serif;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color:#F6CC0C;
+}
+
+
 .container {
     display: flex;
 }
 
-.anw_pg {
-    position: absolute;
-    right: 100px;
-    top: 50%;
+.answ_pg {
+    /* margin-right: 50%;               */
+    transform: translateX(13%);                           
+    /* margin-top: 40%; */
     color: #F6CC0C;
     background-color: #141414;
     font-style: 'Open Sans', serif;
@@ -22,26 +73,32 @@ html {
     padding: 32px 32px;
     padding-bottom:6px;
     padding-top: 6px; 
-    margin: 1px 2px;
     font-size: 35px;
     width: 500px;
+    border-radius: 25px;
 }
-.anw_pg {border-radius: 25px;}
+.answ_pg:hover {
+    background-color: #F6CC0C;
+    color:#141414;
+    transition: 0.3s;
+}
+.answ_pg a:visited {
+    color: #f1d969;
+}
 
-img {
-    /* display: block; */
-    width: 740px;
-    left: 45%;
+.immg {
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 100%; */
+    /* width: 600px; */
     user-select: none;
 }
 
 body {
-    top: 50px;
-    /* width: 700px; */
     background-color: hsl(0, 0%, 8%)
 }
 
-h1 {
+/* h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +108,7 @@ h1 {
     margin: 0;
     text-shadow: 0.5px 0.5px 0.5px #F6CC0C;
     color: #F6CC0C
-}
+} */
 
 p {
     text-align: justify;
@@ -67,15 +124,32 @@ p {
     
 }
 
-p {border-radius: 8px;}
 
-.verticalcenter {
-    display: table-cell;
-    height: 400px;
-    vertical-align: middle;
+.message {
+    margin-bottom: 2%;
+    color:#F6CC0C;
+    background-color: #141414;
+    padding: 3px;
+    margin: 4px;
 }
 
+.message {
+    text-align: center;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity  0.3s ease-in-out ;
+}
+.message.sent {
+    opacity: 0.6;
+}
+
+
 .send {
+    
+    position: sticky;
+    top: 50%;
+    margin-top: 10px;
+    margin-left: 0.5%;
     background-color: #141414;
     color: white;
     font-style: 'Open Sans', serif;
@@ -101,85 +175,48 @@ p {border-radius: 8px;}
 .quastions {
     margin-bottom: 60px;
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row;
+    gap: 50px;
 }
 
+.baton {width: 50%;}
 
-.txt_blocks {
-    width: 100%;
-
+.btnes {
+    width: 50%;
+    margin-right: auto;
 }
 
- .txt {               
-    resize: none;
-    overflow:auto;
-    word-wrap: break-word;
-    vertical-align: middle;
-    float: right;
-    margin-left: auto;    
-    flex-direction: column;                                    
-    text-align: left;
+/* .txt_blocks {
+    width: 50%;
+
+} */
+
+ .txt {                                           /**************TEXYYXXTXXTTXTXTXXXTX*********************/
+    
+    /* transform: translate(150px, -150px); */
+    /* overflow:auto; */
+    /* word-wrap: break-word; */
+    /* vertical-align: middle; */
+    /* float: right; */
+    /* margin-left: auto;     */                                   
+    /* text-align: left; */
     color: #F6CC0C;
     background-color: #141414;
     font-style: 'Open Sans', serif;
     border: 3px solid rgb(255, 255, 255);
     cursor: pointer;
     padding: 15px 15px;
-    padding: 15px 15px;
-    padding-bottom:10px;
+    padding-bottom:1px;
     padding-top: 6px; 
-    margin-top: 20px;
-    margin: 4px 2px;
+    /* margin-top: 20px; */
     font-size: 35px;
     display: none;
-    right: 5%;
-    width: 650px;
-
-
-}
-
-.txt {border-radius: 8px;}
-
-/* .txt1 {
-    margin-bottom: 103px;
-    height: 100px;
-    resize: none;
-    overflow:auto;
-    word-wrap: break-word;
-    
+    /* right: 5%; */
+    width: 60%;
+    border-radius: 8px;
 
 }
-.txt2 {
-    margin-bottom: 103px;
-    
 
-}
-.txt3 {
-    margin-bottom: 103px;
-    
-
-}
-.txt4 {
-   
-    margin-bottom: 103px;
-}
-.txt5 {
-   
-    margin-bottom: 103px;
-}
-.txt6 {
-  
-    margin-bottom: 103px;
-}
-.txt7 {
-   
-    margin-bottom: 103px;
-}
-.txt8 {
-    
-    margin-bottom: 103px;
-} */
 
 
 
@@ -202,8 +239,9 @@ p {border-radius: 8px;}
 
 
 .button {                                                            /***************КНОПКИ ТУУУТАА****************/
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    
     align-items: flex-start;
     margin-top: 20px;
     color: #F6CC0C;
@@ -216,20 +254,21 @@ p {border-radius: 8px;}
     padding-top: 12px; 
     margin: 4px 2px;
     font-size: 35px;
-    width: 850px;
+    width: 100%;
     text-align: left;
     user-select: none;
 }
 
-.button1 {                                                                      /****КНОПКА 1111111111111****/
+
+.button1 {             
+     /* width: 100%;                                                     
     background-color: #141414;
     color: #F6CC0C;
     border: 3px solid white;
     padding: 50px 50px;
     padding-bottom: 10px;
-    padding-top: 3px;
-     /* width: 770px; */
-     height: 100px; 
+    padding-top: 3px;  */
+
     
 }
 
@@ -266,14 +305,12 @@ p {border-radius: 8px;}
     }
 
 .button2 {                                                              /****КНОПКА 2222222222222222222****/
-        background-color: #141414;
+        /* background-color: #141414;
         color: #F6CC0C;
         border: 3px solid white;
         padding-bottom: 10px;
         padding-top: 3px;
-        margin: 3px 4px;
-        /* width: 770px; */
-        height: 135px;
+        margin: 3px 4px; */
     }
     
     .button2 span {
@@ -314,8 +351,7 @@ p {border-radius: 8px;}
             border: 3px solid white;
             padding-bottom: 10px;
             padding-top: 3px;
-            /* width: 770px; */
-            height: 135px; 
+       
         }   
         
         .button3 span {
@@ -356,8 +392,7 @@ p {border-radius: 8px;}
                 border: 3px solid white;
                 padding-top: 3px;
                 padding-bottom: 10px;
-                /* width: 770px;
-                height: 100px; */
+             
             }
             
             .button4 span {
@@ -398,8 +433,7 @@ p {border-radius: 8px;}
                     border: 3px solid white;
                     padding-top: 3px;
                     padding-bottom: 10px;
-                    /* width: 770px;
-                    height: 135px; */
+                    
                     
                 }
                 
@@ -440,8 +474,7 @@ p {border-radius: 8px;}
                         border: 3px solid white;
                         padding-top: 3px;
                         padding-bottom: 10px;
-                        /* width: 770px;
-                        height: 100px; */
+                    
                     }
                     
                     .button6 span {
@@ -482,8 +515,7 @@ p {border-radius: 8px;}
                             border: 3px solid white;
                             padding-top: 3px;
                             padding-bottom: 10px;
-                            /* width: 770px;
-                            height: 185px; */
+                            
                         }
                         
                         .button7 span {
@@ -524,8 +556,7 @@ p {border-radius: 8px;}
                                 border: 3px solid white;
                                 padding-top: 3px;
                                 padding-bottom: 10px;   
-                                 /* width: 770px; */
-                                height: 135px;
+                                
                             }
                             
                             .button8 span {
