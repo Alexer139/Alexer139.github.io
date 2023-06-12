@@ -7,7 +7,7 @@
 
 
 //   var xhr = new XMLHttpRequest();
-  
+
 //   xhr.open('Post', 'save_message.php', true);
 //   xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 //   xhr.onreadystatechange = function() {
@@ -20,17 +20,17 @@
 // });
 
 function sendMessage() {
-  
+
   var messageElement = document.getElementById('message');
   messageElement.classList.add('sent');
 
-  setTimeout(function() {
+  setTimeout(function () {
     messageElement.classList.remove('sent')
   }, 3000);
 
 
   // var send = document = document.getElementsByClassName('send');
-  
+
   // var message = send[0].value;
 
   // send[0].disabled = true;
@@ -43,18 +43,18 @@ var button1 = document.getElementById("btn1");        //1111111111
 var text1 = document.getElementById("txt1");
 var send = document.getElementById("send");
 
-text1.addEventListener("keyup", function(event) {
+text1.addEventListener("keyup", function (event) {
   if (event.key === 'Enter') {
     send.click();
   }
 });
 
-text1.addEventListener("click", function() {
+text1.addEventListener("click", function () {
   var message = text1.value;
   text1.value = "";
 });
 
-button1.addEventListener("click", function() {
+button1.addEventListener("click", function () {
   if (text1.style.display === "none") {
     text1.style.display = "inline-block";
   } else {
@@ -65,7 +65,7 @@ button1.addEventListener("click", function() {
 var button2 = document.getElementById("btn2");       //2222222222222
 var text2 = document.getElementById("txt2");
 
-button2.addEventListener("click", function() {
+button2.addEventListener("click", function () {
   if (text2.style.display === "none") {
     text2.style.display = "inline-block";
   } else {
@@ -76,7 +76,7 @@ button2.addEventListener("click", function() {
 var button3 = document.getElementById("btn3");       //3333333333333
 var text3 = document.getElementById("txt3");
 
-button3.addEventListener("click", function() {
+button3.addEventListener("click", function () {
   if (text3.style.display === "none") {
     text3.style.display = "inline-block";
   } else {
@@ -87,7 +87,7 @@ button3.addEventListener("click", function() {
 var button4 = document.getElementById("btn4");          ////444444444444444
 var text4 = document.getElementById("txt4");
 
-button4.addEventListener("click", function() {
+button4.addEventListener("click", function () {
   if (text4.style.display === "none") {
     text4.style.display = "inline-block";
   } else {
@@ -98,7 +98,7 @@ button4.addEventListener("click", function() {
 var button5 = document.getElementById("btn5");           //555555555555555555
 var text5 = document.getElementById("txt5");
 
-button5.addEventListener("click", function() {
+button5.addEventListener("click", function () {
   if (text5.style.display === "none") {
     text5.style.display = "inline-block";
   } else {
@@ -109,7 +109,7 @@ button5.addEventListener("click", function() {
 var button6 = document.getElementById("btn6");          //666666666666666666
 var text6 = document.getElementById("txt6");
 
-button6.addEventListener("click", function() {
+button6.addEventListener("click", function () {
   if (text6.style.display === "none") {
     text6.style.display = "inline-block";
   } else {
@@ -120,7 +120,7 @@ button6.addEventListener("click", function() {
 var button7 = document.getElementById("btn7");         //7777777777777
 var text7 = document.getElementById("txt7");
 
-button7.addEventListener("click", function() {
+button7.addEventListener("click", function () {
   if (text7.style.display === "none") {
     text7.style.display = "inline-block";
   } else {
@@ -131,7 +131,7 @@ button7.addEventListener("click", function() {
 var button8 = document.getElementById("btn8");         //8888888888888888
 var text8 = document.getElementById("txt8");
 
-button8.addEventListener("click", function() {
+button8.addEventListener("click", function () {
   if (text8.style.display === "none") {
     text8.style.display = "inline-block";
   } else {

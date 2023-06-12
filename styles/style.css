@@ -6,8 +6,8 @@ html {
     text-align: center;
 }
 
-#uuoop {            
-                                          /********************АНИМАЦИЯ ЗАГАЛОВКА********************/
+#uuoop {
+    /********************АНИМАЦИЯ ЗАГАЛОВКА********************/
     left: 50%;
     position: relative;
     /* display: flex; */
@@ -16,7 +16,7 @@ html {
     animation-duration: 600px;
     width: 1100px;
     background-color: #F6CC0C;
-    color:#141414;
+    color: #141414;
     -webkit-animation: mymove 5s infinite;
     animation: mymove 12s infinite;
     height: 90px;
@@ -29,31 +29,36 @@ html {
 }
 
 #uuoop::before {
-    
+
     content: "";
     position: absolute;
     top: 10%;
     left: 10%;
     width: 0;
     height: 100%;
-    background-color:#F6CC0C;
+    background-color: #F6CC0C;
     animation: myanimation 2s forwards;
 }
 
 
-    @-webkit-keyframes mymove {
-        50% {width: 100%;}
+@-webkit-keyframes mymove {
+    50% {
+        width: 100%;
     }
-    @keyframes mymove {
-        50% {width: 100%;}
+}
+
+@keyframes mymove {
+    50% {
+        width: 100%;
     }
+}
 
 .h1 {
     font-style: 'Open Sans', serif;
     text-align: center;
     top: 50%;
     transform: translate(-50%, -50%);
-    color:#F6CC0C;
+    color: #F6CC0C;
 }
 
 
@@ -62,8 +67,10 @@ html {
 }
 
 .answ_pg {
+    /* display: none; */
     /* margin-right: 50%;               */
-    transform: translateX(13%);                           
+    margin-left: 7%;
+    transform: translateY(-40px);
     /* margin-top: 40%; */
     color: #F6CC0C;
     background-color: #141414;
@@ -71,19 +78,21 @@ html {
     border: 3px solid white;
     cursor: pointer;
     padding: 32px 32px;
-    padding-bottom:6px;
-    padding-top: 6px; 
+    padding-bottom: 6px;
+    padding-top: 6px;
     font-size: 35px;
-    width: 500px;
+    width: 28%;
     border-radius: 25px;
 }
+
 .answ_pg:hover {
     background-color: #F6CC0C;
-    color:#141414;
+    color: #141414;
     transition: 0.3s;
 }
+
 .answ_pg a:visited {
-    color: #f1d969;
+    color: #ada688;
 }
 
 .immg {
@@ -121,35 +130,39 @@ p {
     border: 3px solid rgb(255, 255, 255);
     padding-left: 10px;
     padding-right: 10px;
-    
+
 }
 
 
 .message {
     margin-bottom: 2%;
-    color:#F6CC0C;
+    color: #F6CC0C;
     background-color: #141414;
     padding: 3px;
     margin: 4px;
 }
 
 .message {
+    transform: translateY(-40px);
+    margin-left: 2%;
     text-align: center;
     padding: 5px;
     opacity: 0;
-    transition: opacity  0.3s ease-in-out ;
+    transition: opacity 0.3s ease-in-out;
 }
+
 .message.sent {
     opacity: 0.6;
 }
 
 
 .send {
-    
-    position: sticky;
+
+    /* position: sticky; */
+    transform: translateY(-50px);
     top: 50%;
     margin-top: 10px;
-    margin-left: 0.5%;
+    margin-left: 2%;
     background-color: #141414;
     color: white;
     font-style: 'Open Sans', serif;
@@ -162,13 +175,21 @@ p {
     outline: none;
     box-shadow: 0 9px #999;
 }
-.send {border-radius: 8%}
-.send:hover {color: #F6CC0C; background-color: #000000;}
+
+.send {
+    border-radius: 8%
+}
+
+.send:hover {
+    color: #F6CC0C;
+    background-color: #000000;
+}
+
 .send:active {
-    color:#F6CC0C;
+    color: #F6CC0C;
     background-color: #000000;
     box-shadow: 0 5px #666;
-    transform: translateY(10px);
+    transform: translateY(-40px);
 }
 
 
@@ -176,43 +197,41 @@ p {
     margin-bottom: 60px;
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    column-gap: -30%;
 }
 
-.baton {width: 50%;}
 
 .btnes {
     width: 50%;
     margin-right: auto;
+   
 }
 
-/* .txt_blocks {
+.txt_blocks {
     width: 50%;
+    /* margin-left: auto; */
+    position: absolute;
+    right: 4%;
+    max-width: 40%;
+    min-width: 40%;
+    row-gap: 10%;
 
-} */
+}
 
- .txt {                                           /**************TEXYYXXTXXTTXTXTXXXTX*********************/
-    
-    /* transform: translate(150px, -150px); */
-    /* overflow:auto; */
-    /* word-wrap: break-word; */
-    /* vertical-align: middle; */
-    /* float: right; */
-    /* margin-left: auto;     */                                   
-    /* text-align: left; */
+.txt {                                                      /**************TEXYYXXTXXTTXTXTXXXTX*********************/
     color: #F6CC0C;
     background-color: #141414;
     font-style: 'Open Sans', serif;
     border: 3px solid rgb(255, 255, 255);
     cursor: pointer;
     padding: 15px 15px;
-    padding-bottom:1px;
-    padding-top: 6px; 
+    padding-bottom: 1px;
+    padding-top: 6px;
     /* margin-top: 20px; */
     font-size: 35px;
     display: none;
     /* right: 5%; */
-    width: 60%;
+    width: 100%;
     border-radius: 8px;
 
 }
@@ -224,24 +243,25 @@ p {
 .fade-in {
     animation: fade-in is ease-in;
 }
+
 @keyframes fade-in {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 0;
     }
-} 
+}
 
 
 
-.button {margin-bottom: 10px;}
+.button {
+    margin-bottom: 10px;
+}
 
 
-.button {                                                            /***************КНОПКИ ТУУУТАА****************/
-    /* display: flex;
-    flex-direction: column; */
-    
+.button {                                                 /***************КНОПКИ ТУУУТАА****************/
     align-items: flex-start;
     margin-top: 20px;
     color: #F6CC0C;
@@ -250,8 +270,8 @@ p {
     border: 3px solid rgb(255, 255, 255);
     cursor: pointer;
     padding: 32px 32px;
-    padding-bottom:50px;
-    padding-top: 12px; 
+    padding-bottom: 50px;
+    padding-top: 12px;
     margin: 4px 2px;
     font-size: 35px;
     width: 100%;
@@ -260,8 +280,8 @@ p {
 }
 
 
-.button1 {             
-     /* width: 100%;                                                     
+.button1 {                                                  
+    /* width: 100%;                                                     
     background-color: #141414;
     color: #F6CC0C;
     border: 3px solid white;
@@ -269,7 +289,7 @@ p {
     padding-bottom: 10px;
     padding-top: 3px;  */
 
-    
+
 }
 
 .button1 span {
@@ -277,320 +297,349 @@ p {
     display: inline-block;
     position: relative;
     transition: 0.2s;
-    }
-    .button1 span::after {
-        content: '\00bb';
-        position:sticky;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.2s;
-    }
-    .button1:hover span {
-        padding-right: 25px;
-    }
-    .button1:hover span:after {
-        opacity: 1;
-        right: 0;
-    }
-    .button1 {border-radius: 8px;}
-        
-    .button1:not(:lact-child) {
-        border-right: none;
-    }
-    .button1:hover {
-        background-color: #F6CC0C;
-        color:#141414;
-        transition: 0.3s;
-    }
+}
 
-.button2 {                                                              /****КНОПКА 2222222222222222222****/
-        /* background-color: #141414;
-        color: #F6CC0C;
-        border: 3px solid white;
-        padding-bottom: 10px;
-        padding-top: 3px;
-        margin: 3px 4px; */
-    }
+.button1 span::after {
+    content: '\00bb';
+    position: sticky;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.2s;
+}
+
+.button1:hover span {
+    padding-right: 25px;
+}
+
+.button1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button1 {
+    border-radius: 8px;
+}
+
+.button1:not(:lact-child) {
+    border-right: none;
+}
+
+.button1:hover {
+    background-color: #F6CC0C;
+    color: #141414;
+    transition: 0.3s;
+}
+
+.button2 {                                                                  /****КНОПКА 2222222222222222222****/
+                                                                            
+
+}
+
+.button2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+}
+
+.button2 span::after {
+    content: '\00bb';
+    position: sticky;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.2s;
+}
+
+.button2:hover span {
+    padding-right: 25px;
+}
+
+.button2:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button2 {
+    border-radius: 8px;
+}
+
+.button2:not(:lact-child) {
+    border-right: none;
+}
+
+.button2:hover {
+    background-color: #F6CC0C;
+    color: #141414;
+    transition: 0.3s;
+}
+
+.button3 {                                                              /****КНОПКА 33333333333333333****/
     
-    .button2 span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.2s;
-        }
-        .button2 span::after {
-            content: '\00bb';
-            position: sticky;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.2s;
-        }
-        .button2:hover span {
-            padding-right: 25px;
-        }
-        .button2:hover span:after {
-            opacity: 1;
-            right: 0;
-        }
-        .button2 {border-radius: 8px;}
-            
-        .button2:not(:lact-child) {
-            border-right: none;
-        }
-        .button2:hover {
-            background-color: #F6CC0C;
-            color:#141414;
-            transition: 0.3s;
-        }   
 
-.button3 {                                                                      /****КНОПКА 33333333333333333****/
-            background-color: #141414;
-            color: #F6CC0C;
-            border: 3px solid white;
-            padding-bottom: 10px;
-            padding-top: 3px;
-       
-        }   
-        
-        .button3 span {
-            cursor: pointer;
-            display: inline-block;
-            position: relative;
-            transition: 0.2s;
-            }
-            .button3 span::after {
-                content: '\00bb';
-                position: sticky;
-                opacity: 0;
-                top: 0;
-                right: -20px;
-                transition: 0.2s;
-            }
-            .button3:hover span {
-                padding-right: 25px;
-            }
-            .button3:hover span:after {
-                opacity: 1;
-                right: 0;
-            }
-            .button3 {border-radius: 8px;}
-                
-            .button3:not(:lact-child) {
-                border-right: none;
-            }
-            .button3:hover {
-                background-color: #F6CC0C;
-                color:#141414;
-                transition: 0.3s;
-            }   
+}
 
-.button4 {                                                                       /****КНОПКА 44444444444444444****/
-                background-color: #141414;
-                color: #F6CC0C;
-                border: 3px solid white;
-                padding-top: 3px;
-                padding-bottom: 10px;
-             
-            }
-            
-            .button4 span {
-                cursor: pointer;
-                display: inline-block;
-                position: relative;
-                transition: 0.2s;
-                }
-                .button4 span::after {
-                    content: '\00bb';
-                    position: sticky;
-                    opacity: 0;
-                    top: 0;
-                    right: -20px;
-                    transition: 0.2s;
-                }
-                .button4:hover span {
-                    padding-right: 25px;
-                }
-                .button4:hover span:after {
-                    opacity: 1;
-                    right: 0;
-                }
-                .button4 {border-radius: 8px;}
-                    
-                .button4:not(:lact-child) {
-                    border-right: none;
-                }
-                .button4:hover {
-                    background-color: #F6CC0C;
-                    color:#141414;
-                    transition: 0.3s;
-                }   
+.button3 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+}
 
-.button5 {                                                                          /****КНОПКА 5555555555555555555****/
-                    background-color: #141414;
-                    color: #F6CC0C;
-                    border: 3px solid white;
-                    padding-top: 3px;
-                    padding-bottom: 10px;
-                    
-                    
-                }
-                
-                .button5 span {
-                    cursor: pointer;
-                    display: inline-block;
-                    position: relative;
-                    transition: 0.2s;
-                    }
-                    .button5 span::after {
-                        content: '\00bb';
-                        position: sticky;
-                        opacity: 0;
-                        top: 0;
-                        right: -20px;
-                        transition: 0.2s;
-                    }
-                    .button2:hover span {
-                        padding-right: 25px;
-                    }
-                    .button5:hover span:after {
-                        opacity: 1;
-                        right: 0;
-                    }
-                    .button5 {border-radius: 8px;}
-                        
-                    .button5:not(:lact-child) {
-                        border-right: none;
-                    }
-                    .button5:hover {
-                        background-color: #F6CC0C;
-                        color:#141414;
-                        transition: 0.3s;
-                    }   
-.button6 {                                                                      /****КНОПКА 6666666666666666666666****/
-                        background-color: #141414;
-                        color: #F6CC0C;
-                        border: 3px solid white;
-                        padding-top: 3px;
-                        padding-bottom: 10px;
-                    
-                    }
-                    
-                    .button6 span {
-                        cursor: pointer;
-                        display: inline-block;
-                        position: relative;
-                        transition: 0.2s;
-                        }
-                        .button6 span::after {
-                            content: '\00bb';
-                            position: sticky;
-                            opacity: 0;
-                            top: 0;
-                            right: -20px;
-                            transition: 0.2s;
-                        }
-                        .button6:hover span {
-                            padding-right: 25px;
-                        }
-                        .button6:hover span:after {
-                            opacity: 1;
-                            right: 0;
-                        }
-                        .button6 {border-radius: 8px;}
-                            
-                        .button6:not(:lact-child) {
-                            border-right: none;
-                        }
-                        .button6:hover {
-                            background-color: #F6CC0C;
-                            color:#141414;
-                            transition: 0.3s;
-                        }   
+.button3 span::after {
+    content: '\00bb';
+    position: sticky;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.2s;
+}
 
-.button7 {                                                                  /****КНОПКА 777777777777777777777****/
-                            background-color: #141414;
-                            color: #F6CC0C;
-                            border: 3px solid white;
-                            padding-top: 3px;
-                            padding-bottom: 10px;
-                            
-                        }
-                        
-                        .button7 span {
-                            cursor: pointer;
-                            display: inline-block;
-                            position: relative;
-                            transition: 0.2s;
-                            }
-                            .button7 span::after {
-                                content: '\00bb';
-                                position: sticky;
-                                opacity: 0;
-                                top: 0;
-                                right: -20px;
-                                transition: 0.2s;
-                            }
-                            .button7:hover span {
-                                padding-right: 25px;
-                            }
-                            .button7:hover span:after {
-                                opacity: 1;
-                                right: 0;
-                            }
-                            .button7 {border-radius: 8px;}
-                                
-                            .button7:not(:lact-child) {
-                                border-right: none;
-                            }
-                            .button7:hover {
-                                background-color: #F6CC0C;
-                                color:#141414;
-                                transition: 0.3s;
-                            }   
+.button3:hover span {
+    padding-right: 25px;
+}
 
-.button8 {                                                                      /****КНОПКА 888888888888888888888****/
-                                background-color: #141414;
-                                color: #F6CC0C;
-                                border: 3px solid white;
-                                padding-top: 3px;
-                                padding-bottom: 10px;   
-                                
-                            }
-                            
-                            .button8 span {
-                                cursor: pointer;
-                                display: inline-block;
-                                position: relative;
-                                transition: 0.2s;
-                                }
-                                .button8 span::after {
-                                    content: '\00bb';
-                                    position: sticky;
-                                    opacity: 0;
-                                    top: 0;
-                                    right: -20px;
-                                    transition: 0.2s;
-                                }
-                                .button8:hover span {
-                                    padding-right: 25px;
-                                }
-                                .button8:hover span:after {
-                                    opacity: 1;
-                                    right: 0;
-                                }
-                                .button8 {border-radius: 8px;}
-                                    
-                                .button8:not(:lact-child) {
-                                    border-right: none;
-                                }
-                                .button8:hover {
-                                    background-color: #F6CC0C;
-                                    color:#141414;
-                                    transition: 0.3s;
-                                }   
+.button3:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button3 {
+    border-radius: 8px;
+}
+
+.button3:not(:lact-child) {
+    border-right: none;
+}
+
+.button3:hover {
+    background-color: #F6CC0C;
+    color: #141414;
+    transition: 0.3s;
+}
+
+.button4 {
+                                                             /****КНОПКА 44444444444444444****/
+  
+
+}
+
+.button4 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+}
+
+.button4 span::after {
+    content: '\00bb';
+    position: sticky;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.2s;
+}
+
+.button4:hover span {
+    padding-right: 25px;
+}
+
+.button4:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button4 {
+    border-radius: 8px;
+}
+
+.button4:not(:lact-child) {
+    border-right: none;
+}
+
+.button4:hover {
+    background-color: #F6CC0C;
+    color: #141414;
+    transition: 0.3s;
+}
+
+.button5 {
+                                                                     /****КНОПКА 5555555555555555555****/
+   
 
 
+}
 
+.button5 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+}
 
+.button5 span::after {
+    content: '\00bb';
+    position: sticky;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.2s;
+}
+
+.button2:hover span {
+    padding-right: 25px;
+}
+
+.button5:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button5 {
+    border-radius: 8px;
+}
+
+.button5:not(:lact-child) {
+    border-right: none;
+}
+
+.button5:hover {
+    background-color: #F6CC0C;
+    color: #141414;
+    transition: 0.3s;
+}
+
+.button6 {
+                                                             /****КНОПКА 6666666666666666666666****/
+   
+
+}
+
+.button6 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+}
+
+.button6 span::after {
+    content: '\00bb';
+    position: sticky;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.2s;
+}
+
+.button6:hover span {
+    padding-right: 25px;
+}
+
+.button6:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button6 {
+    border-radius: 8px;
+}
+
+.button6:not(:lact-child) {
+    border-right: none;
+}
+
+.button6:hover {
+    background-color: #F6CC0C;
+    color: #141414;
+    transition: 0.3s;
+}
+
+.button7 {
+                                                            /****КНОПКА 777777777777777777777****/
+    
+
+}
+
+.button7 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+}
+
+.button7 span::after {
+    content: '\00bb';
+    position: sticky;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.2s;
+}
+
+.button7:hover span {
+    padding-right: 25px;
+}
+
+.button7:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button7 {
+    border-radius: 8px;
+}
+
+.button7:not(:lact-child) {
+    border-right: none;
+}
+
+.button7:hover {
+    background-color: #F6CC0C;
+    color: #141414;
+    transition: 0.3s;
+}
+
+.button8 {
+    /****КНОПКА 888888888888888888888****/
+   
+}
+
+.button8 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+}
+
+.button8 span::after {
+    content: '\00bb';
+    position: sticky;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.2s;
+}
+
+.button8:hover span {
+    padding-right: 25px;
+}
+
+.button8:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button8 {
+    border-radius: 8px;
+}
+
+.button8:not(:lact-child) {
+    border-right: none;
+}
+
+.button8:hover {
+    background-color: #F6CC0C;
+    color: #141414;
+    transition: 0.3s;
+}
